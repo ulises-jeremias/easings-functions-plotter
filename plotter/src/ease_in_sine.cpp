@@ -9,15 +9,13 @@ namespace plt = matplotlibcpp;
 int 
 main()
 {
-	int t, n = 100;
+	int n = 1000;
 	std::vector<double> times, results;
 
 	for (int i = 0; i < n; i++) 
 	{
-                t = i;
-
-                results.push_back(n * cml_ease_sine_in_out(t / n));
-		times.push_back(t - n/2);
+                results.push_back(n * cml_ease_sine_in(2*M_PI*i/360.0));
+		times.push_back(i*i);
 
 		if (i % 10 == 0) 
 		{
@@ -27,8 +25,8 @@ main()
                         // Plot a line whose name will show up as "easeInSine(t)" in the legend.
 			plt::named_plot("easeInSine(t)", times, results);
 
-			// Set t-axis to interval [0,10000]
-			plt::xlim(0, n);
+			// Set t-axis to interval [0,100000]
+			plt::xlim(0, n*n);
 
 			// Add graph title
 			plt::title("Ease in sine function");
