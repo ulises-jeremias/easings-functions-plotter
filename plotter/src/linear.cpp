@@ -23,12 +23,12 @@ main()
 		{
 			// Clear previous plot
 			plt::clf();
-			// Plot line from given x and y data. Color is selected automatically.
+			// Plot line from given t and x data. Color is selected automatically.
 			plt::plot(results, times);
-                        // Plot a line whose name will show up as "linear(x)" in the legend.
-			plt::named_plot("linear(x)", results, times);
+                        // Plot a line whose name will show up as "linear(t)" in the legend.
+			plt::named_plot("linear(t)", results, times);
 
-			// Set x-axis to interval [0,1000000]
+			// Set t-axis to interval [0,1000000]
 			plt::xlim(0, n * n);
 
 			// Add graph title
