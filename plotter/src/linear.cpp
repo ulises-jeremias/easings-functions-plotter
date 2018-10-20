@@ -14,9 +14,9 @@ main()
 
 	for (int i = 0; i < n; i++) 
 	{
-        t = i * i;
+                t = i * i;
 
-        results.push_back(cml_linear_interpolation(t));
+                results.push_back(cml_linear_interpolation(t));
 		times.push_back(t);
 
 		if (i % 10 == 0) 
