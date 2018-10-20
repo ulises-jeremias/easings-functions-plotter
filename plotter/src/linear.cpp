@@ -23,8 +23,7 @@ main()
 		{
 			// Clear previous plot
 			plt::clf();
-			// Plot line from given t and x data. Color is selected automatically.
-			plt::plot(times, results);
+
                         // Plot a line whose name will show up as "linear(t)" in the legend.
 			plt::named_plot("linear(t)", times, results);
 

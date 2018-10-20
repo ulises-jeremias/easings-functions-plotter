@@ -12,8 +12,8 @@ linear: clean folders
 	g++ -DWITHOUT_NUMPY $(SOURCE_FOLDER)/linear.cpp -o $(BUILD_FOLDER)/linear.out \
 	$(CFLAG) $(INCLUDES) $(LIBS)
 
-ease_in_out_bounce: clean folders
-	g++ -DWITHOUT_NUMPY $(SOURCE_FOLDER)/ease_in_out_bounce.cpp -o $(BUILD_FOLDER)/ease_in_out_bounce.out \
+ease_in_sine: clean folders
+	g++ -DWITHOUT_NUMPY $(SOURCE_FOLDER)/ease_in_sine.cpp -o $(BUILD_FOLDER)/ease_in_sine.out \
 	$(CFLAG) $(INCLUDES) $(LIBS)
 
 clean:
